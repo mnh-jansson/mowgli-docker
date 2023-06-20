@@ -8,6 +8,7 @@ services:
       - "8080:8080"
       - "1883:1883"
       - "9001:9001"
+      - "9002:9002"
     volumes:
       - ./mower_params:/root/mower_params
       - ./config:/config

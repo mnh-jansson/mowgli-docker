@@ -10,6 +10,10 @@ services:
     volumes:
       - ./mower_params:/root/mower_params
       - ./config:/config
+      - ./ros_home:/root
+    environment:
+      - ROSCONSOLE_CONFIG_FILE=/config/rosconsole.config
+      - ROSOUT_DISABLE_FILE_LOGGING=True
     devices:
       - /dev/ttyUSB0:/dev/ttyUSB0
       - /dev/ttyACM0:/dev/ttyACM0

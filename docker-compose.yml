@@ -1,9 +1,7 @@
 version: '3.0'
 services:
   mowgli-openmower:
-    build:
-      context: ./
-      dockerfile: Dockerfile
+    image: ghcr.io/mnh-jansson/mowgli-docker:main
     ports:
       - "8080:8080"
       - "1883:1883"
@@ -15,4 +13,4 @@ services:
     devices:
       - /dev/ttyUSB0:/dev/ttyUSB0
       - /dev/ttyACM0:/dev/ttyACM0
-    container_name: "openmower"
+    container_name: "mowgli-openmower"

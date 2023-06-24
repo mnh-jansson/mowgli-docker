@@ -1,5 +1,7 @@
 # Dockerfile for Mowgli
 
+[![Build](https://github.com/mnh-jansson/mowgli-docker/actions/workflows/docker-image.yml/badge.svg)](https://github.com/mnh-jansson/mowgli-docker/actions/workflows/docker-image.yml)
+
 This image uses open_mower_ros as base and adds rosserial-server, launch file and configuration files that are needed to run openmower using the stock hardware with the Mowgli firmware. 
 
 ## Requirements
